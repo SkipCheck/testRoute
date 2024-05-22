@@ -7,9 +7,8 @@
       <td class="field">{{ people.job_title }}</td>
       <td class='fired' v-if="people.fired">Уволен</td>
       <button @click="setFired" v-if="!people.fired">Уволить</button>
-      <input type="checkbox" v-model="selected" v-if="!people.fired" @click="select()"/>
+      <input type="checkbox" v-model="selected" v-if="!people.fired" @change="selectEvent()"/>
     </tr>
-    
 </template>
 
 <script>
@@ -32,11 +31,11 @@ export default {
     redirectToProfile() {
       this.$router.push({ name: 'ProfilePage', params: { id: this.id}});
     },
-    select(){
+    selectEvent(){
       if(this.selected){
-        this.$emit("selected", this.id)
+        this.$emit("selectedEvent", this.id)
       }else{
-        this.$emit("unselected", this.id)
+        this.$emit("unselectedEvent", this.id)
       }
     }
   }

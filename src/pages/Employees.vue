@@ -21,12 +21,12 @@
                 :filterFired = "fired"
                 @setFired="setFired"
                 @clearQuery="clearQuery"
-                @selected="selected"
-                @@unselected="unselected"
+                @selectedEvent="selectedEvent"
+                @unselectedEvent="unselectedEvent"
                 />
             </tbody>
         </table>
-        <button v-if="view">Удалить</button>
+        <button v-if="selectedEmployees.length > 0 && !fired" @click="fireSelectedEmployee()" class="main-fire">Уволить</button>
     </div>
    
 </template>
@@ -43,8 +43,7 @@ export default{
         return{
             titles : this.genTitles(),
             filteredEmployees : null,
-            selectedEmployees : [],
-            view : false
+            selectedEmployees : []
         }
     },
     props : ['employees', 'fired'],
@@ -85,17 +84,20 @@ export default{
         clearQuery(){
             this.filteredEmployees = null;
         },
-        selected(id){
-            console.log(this.selectedEmployees)
+        selectedEvent(id){
             this.selectedEmployees.push(id)
-            this.view = true
         },
-        unselected(id){
+        unselectedEvent(id){
             const index = this.selectedEmployees.findIndex(item => item === id);
             this.selectedEmployees.splice(index, 1)
-            if(this.selectedEmployees.length == 0){
-                this.view = false
-            }
+        },
+        fireSelectedEmployee(){
+            this.selectedEmployees.forEach(item => {
+                if(this.employees[item].fired != true){
+                    this.$set(this.employees[item], 'fired', true);
+                }
+            });
+            this.selectedEmployees.splice(0, this.selectedEmployees.length)
         }
     },
 }

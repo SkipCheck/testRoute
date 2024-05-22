@@ -205,3 +205,11 @@ td.fired{
 .avatar{
     width: 20%;
 }
+
+.main-fire{
+    align-self: last baseline;
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    margin-top: 20px;
+}
