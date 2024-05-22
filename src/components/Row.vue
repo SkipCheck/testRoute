@@ -1,26 +1,43 @@
 <template>
-  <tr v-if="(people.fired.toString().includes(this.filterFired.toString()))">
-    <td class="field">{{ people.name }}</td>
-    <td class="field">{{ people.birth_date | formatDate }}</td>
-    <td class="field">{{ people.sex | formatSex }}</td>
-    <td class="field">{{ people.organisation}}</td>
-    <td class="field">{{ people.job_title }}</td>
-    <td class='fired' v-if="people.fired">Уволен</td>
-    <button @click="setFired" v-if="!people.fired">Уволить</button>
-  </tr>
+    <tr v-if="(people.fired.toString().includes(this.filterFired.toString()))" >
+      <td class="field" @click="redirectToProfile()">{{ people.name }}</td>
+      <td class="field">{{ people.birth_date | formatDate }}</td>
+      <td class="field">{{ people.sex | formatSex }}</td>
+      <td class="field">{{ people.organisation}}</td>
+      <td class="field">{{ people.job_title }}</td>
+      <td class='fired' v-if="people.fired">Уволен</td>
+      <button @click="setFired" v-if="!people.fired">Уволить</button>
+      <input type="checkbox" v-model="selected" v-if="!people.fired" @click="select()"/>
+    </tr>
+    
 </template>
 
 <script>
 export default {
   name: 'BlankField',
+  data(){
+    return{
+      selected : null
+    }
+  },
   props: {
-    id : null,
+    id : Number,
     people: Object,
     filterFired : null
   },
   methods:{
     setFired(){
       this.$emit("setFired", this.id)
+    },
+    redirectToProfile() {
+      this.$router.push({ name: 'ProfilePage', params: { id: this.id}});
+    },
+    select(){
+      if(this.selected){
+        this.$emit("selected", this.id)
+      }else{
+        this.$emit("unselected", this.id)
+      }
     }
   }
 }

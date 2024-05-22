@@ -7,18 +7,20 @@ import EmployeesPage from "./pages/Employees.vue"
 import FiredEmployees from "./pages/Employees.vue"
 import AdderPage from "./pages/AdderPage.vue"
 import NotFound from "./pages/NotFound.vue"
+import ProfilePage from "./pages/Profile.vue"
 import { employees } from './data/employees'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', component: MainPage},
-  { path: '/employees', component: EmployeesPage, props : {employees : employees, fired : false}},
-  { path: '/fired-employees', component: FiredEmployees, props : {employees : employees, fired : true}},
-  { path: '/add-employee', component: AdderPage, props : {employees : employees}},
-  { path: '/404', component: NotFound},
-  { path: '*', component: NotFound}
+  { path: '/', name: 'MainPage', component: MainPage},
+  { path: '/employees', name: 'EmployeesPage', component: EmployeesPage, props : {employees : employees, fired : false}},
+  { path: '/fired-employees', name: 'FiredEmployees', component: FiredEmployees, props : {employees : employees, fired : true}},
+  { path: '/add-employee', name: 'AdderPage', component: AdderPage, props : {employees : employees}},
+  { path: '/404', name: 'NotFound', component: NotFound},
+  { path: '*', name: 'NotFound', component: NotFound},
+  { path: '/profile/:id', name: 'ProfilePage', component : ProfilePage, props: (route) => ({ id : parseInt(route.params.id), employees : employees})}
 ];
 
 const router = new VueRouter({

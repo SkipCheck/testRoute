@@ -68,7 +68,7 @@ td.fired{
     background-color: #f0053c77;
 }
 
-.employee-adder{
+.employee-adder,.editor{
    display: flex;
    align-items: center;
    justify-content: center;
@@ -76,7 +76,7 @@ td.fired{
    gap: 10px;
 }
 
-.employee-adder div{
+.employee-adder div,.editor div{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -158,7 +158,7 @@ td.fired{
     margin-top: 20px;
     display: block; 
     text-decoration: none;
-    color: #333;
+    color: black;
     margin-bottom: 10px;
 }
 
@@ -168,4 +168,40 @@ td.fired{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.details,.editor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details span{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.back{
+    display: block; 
+    text-decoration: none;
+    color: black;
+}
+
+.back-button{
+    margin-top: 10px;
+    padding: 5px 20px 5px 20px;
+}
+
+.details .fired-button{
+    display: flex;
+    margin-top: 10px;
+    width: 70%;
+    justify-content: center;
+}
+
+.fired-text{
+    color: #f0053cb5;
+}
+.avatar{
+    width: 20%;
 }

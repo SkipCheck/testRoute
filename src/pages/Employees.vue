@@ -16,14 +16,17 @@
             <tbody>
                 <Row v-for="employee in (filteredEmployees != null ? filteredEmployees : employees)" class="row" 
                 :key = "employee.id"
-                :id = "getIndexOfEmployee(employee.name)"
+                :id = "getIndexOfEmployee(employee)"
                 :people = "employee"
                 :filterFired = "fired"
                 @setFired="setFired"
                 @clearQuery="clearQuery"
+                @selected="selected"
+                @@unselected="unselected"
                 />
             </tbody>
         </table>
+        <button v-if="view">Удалить</button>
     </div>
    
 </template>
@@ -39,7 +42,9 @@ export default{
     data(){
         return{
             titles : this.genTitles(),
-            filteredEmployees : null
+            filteredEmployees : null,
+            selectedEmployees : [],
+            view : false
         }
     },
     props : ['employees', 'fired'],
@@ -67,8 +72,12 @@ export default{
             }, new Set()));
             return uniqueTitles
         },
-        getIndexOfEmployee(name){
-            return this.employees.findIndex(employee => employee.name === name);
+        getIndexOfEmployee(employee){
+            for (let i = 0; i < this.employees.length; i++) {
+                if (this.employees[i] === employee) {
+                    return i;
+                }
+            }
         },
         setFired(index){
             this.$set(this.employees[index], 'fired', true);
@@ -76,6 +85,18 @@ export default{
         clearQuery(){
             this.filteredEmployees = null;
         },
+        selected(id){
+            console.log(this.selectedEmployees)
+            this.selectedEmployees.push(id)
+            this.view = true
+        },
+        unselected(id){
+            const index = this.selectedEmployees.findIndex(item => item === id);
+            this.selectedEmployees.splice(index, 1)
+            if(this.selectedEmployees.length == 0){
+                this.view = false
+            }
+        }
     },
 }
 </script>

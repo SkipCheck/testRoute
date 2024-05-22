@@ -16,7 +16,6 @@
             addEmployee(newEmployee) {
                 const id = this.employees.length + 1;
                 this.$set(this.employees, this.employees.length, { id, ...newEmployee });
-                this.$forceUpdate();
             },
         }
     }
