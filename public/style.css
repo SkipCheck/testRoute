@@ -1,0 +1,171 @@
+.wrapper{
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    color: black;
+    line-height: 140%;
+    font-family: 'Exo 2';
+}
+.container{
+    max-width: 1250px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#app{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table-app{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-app button{
+    width: 100%;
+}
+
+.row:nth-child(odd) .field{
+    background-color: #18f0056e;
+}
+
+.row:nth-child(even) .field{
+    background-color: #052cf051;
+}
+
+tr{
+    text-align: center;
+    border-radius: 10px;
+}
+
+th{
+    background-color: #40a2dbd3;
+}
+
+td, th{
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;
+    text-wrap: wrap;
+}
+
+td{
+    font-weight: 600;
+}
+
+td.fired{
+    padding: 5px 30px 5px 30px;
+    background-color: #f0053c77;
+}
+
+.employee-adder{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.employee-adder div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.employee-adder div input{
+    border-radius: 30px;
+    border-color: #052cf051;
+}
+
+.employee-adder div input,button,select{
+    padding: 5px 20px 5px 20px;
+    width: 100%
+}
+
+.form-filters{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-filters div{
+    margin: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-filters span{
+    padding: 20px;
+}
+
+.find{
+    width: 20%;
+}
+
+.form-filters input,button, select{
+    padding: 5px 10px 5px 10px;
+    border-radius: 30px;
+    border-color: #052cf051;
+}
+
+.form-filters select{
+    width: 100%;
+}
+
+.form-filters div button{
+    padding: 5px 30px 5px 30px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit-employee{
+    display: flex;
+    width: 20%;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+#app{
+    display: flex;
+}
+
+.sidebar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    z-index: 1000; 
+}
+
+.router-link {
+    margin-top: 20px;
+    display: block; 
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.app-wrapper{
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
