@@ -1,6 +1,6 @@
 <template>
     <tr v-if="(people.fired.toString().includes(this.filterFired.toString()))" >
-      <td class="field" @click="redirectToProfile()">{{ people.name }}</td>
+      <td class="field focus" @click="redirectToProfile()">{{ people.name }}</td>
       <td class="field">{{ people.birth_date | formatDate }}</td>
       <td class="field">{{ people.sex | formatSex }}</td>
       <td class="field">{{ people.organisation}}</td>
@@ -26,7 +26,7 @@ export default {
   },
   methods:{
     setFired(){
-      this.$emit("setFired", this.id)
+      this.$emit("fireEmployee", ''+this.id)
     },
     redirectToProfile() {
       this.$router.push({ name: 'ProfilePage', params: { id: this.id}});

@@ -38,6 +38,7 @@
         data() {
             return {
                 editedEmployee : {
+                    id : 0,
                     name: '',
                     birth_date: '',
                     sex: 0,
@@ -52,14 +53,9 @@
         },
         methods : {
             startEditing(){
-                console.log(this.employee.birth_date)
-                this.editedEmployee.name = this.employee.name
-                this.editedEmployee.birth_date = (this.formatDate(this.employee.birth_date) != "Invalid Date" ? this.formatDate(this.employee.birth_date) : this.employee.birth_date)
-                
-                this.editedEmployee.sex = this.employee.sex
-                this.editedEmployee.organisation = this.employee.organisation
-                this.editedEmployee.job_title = this.employee.job_title
-                this.editedEmployee.fired = this.employee.fired
+                let birth_date =  (this.formatDate(this.employee.birth_date) != "Invalid Date" ? this.formatDate(this.employee.birth_date) : this.employee.birth_date)
+                this.editedEmployee = {...this.employee}
+                this.editedEmployee.birth_date = birth_date
             },
             formatDate(value){
                 const date = new Date(value * 1000);

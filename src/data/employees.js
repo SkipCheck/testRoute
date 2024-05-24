@@ -8,6 +8,7 @@ export const employees = [
     fired: true
 	},
   {
+    id : 2,
 		name: 'Афанасьев Дмитрий Алексеевич',
     birth_date: -157698000,
     sex: 0,

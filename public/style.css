@@ -63,9 +63,14 @@ td{
     font-weight: 600;
 }
 
-td.fired{
+td.fired,td.field-lost{
     padding: 5px 30px 5px 30px;
     background-color: #f0053c77;
+}
+
+td.field-success{
+    padding: 5px 30px 5px 30px;
+    background-color: #92f005b5;
 }
 
 .employee-adder,.editor{
@@ -176,6 +181,11 @@ td.fired{
     justify-content: center;
     align-items: center;
 }
+
+.details{
+    width : 100%
+}
+
 .details span{
     margin-top: 20px;
     font-size: 20px;
@@ -190,6 +200,7 @@ td.fired{
 .back-button{
     margin-top: 10px;
     padding: 5px 20px 5px 20px;
+    width: 50%;
 }
 
 .details .fired-button{
@@ -207,9 +218,50 @@ td.fired{
 }
 
 .main-fire{
-    align-self: last baseline;
-    justify-content: center;
+    margin: 5px;
+}
+
+.action-buttons{
+    margin-top: 10px;
     display: flex;
+}
+
+.loader-image{
+    width: 50%;
+}
+.pagination{
+    display: flex;
+    margin-top: 10px;
+}
+
+.field.focus{
+    cursor: pointer;
+}
+
+.profile-medexam{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .profile-buttons button{
     width: 20%;
-    margin-top: 20px;
+}
+
+.pagination button{
+    margin: 5px;
+}
+
+.field{
+    padding: 5px 20px 5px 20px;
 }

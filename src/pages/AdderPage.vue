@@ -1,7 +1,7 @@
 <template>
     <div class="app-wrapper">
         <h1>Новый сотрудник</h1>
-        <EmployeeForm @addEmployee="addEmployee"></EmployeeForm>
+        <EmployeeForm></EmployeeForm>
     </div>
 </template>
 <script>
@@ -10,13 +10,6 @@
         name : "AdderPage",
         components : {
             EmployeeForm
-        },
-        props : ['employees'],
-        methods:{
-            addEmployee(newEmployee) {
-                const id = this.employees.length + 1;
-                this.$set(this.employees, this.employees.length, { id, ...newEmployee });
-            },
         }
     }
 </script>

@@ -1,0 +1,558 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Афанасьев Петр Иванович",
+      "birth_date": "1986-06-11",
+      "sex": 0,
+      "organisation": "ООО \"Тест\"",
+      "job_title": "Водитель",
+      "fired": true
+    },
+    {
+      "id": "2",
+      "name": "Александренков Евгений Анатольевич",
+      "birth_date": "1986-06-27",
+      "sex": 0,
+      "organisation": "ООО \"Тест\"",
+      "job_title": "Водитель",
+      "fired": true
+    },
+    {
+      "id": "3",
+      "name": "Александренков Евгений Анатольевич",
+      "birth_date": "1986-06-29",
+      "sex": 0,
+      "organisation": "ООО \"Тест\"",
+      "job_title": "Водитель",
+      "fired": true
+    },
+    {
+      "id": "4",
+      "name": "Бондаренко Артем Васильевич",
+      "birth_date": 841255200,
+      "sex": 0,
+      "organisation": "ООО \"Залесье\"",
+      "job_title": "Инженер-химик",
+      "fired": true
+    },
+    {
+      "id": "5",
+      "name": "fsfesfs",
+      "birth_date": "1996-08-29",
+      "sex": "1",
+      "organisation": "ООО \"Залесье\"",
+      "job_title": "Инженер-химик",
+      "fired": true
+    },
+    {
+      "id": "6",
+      "name": "Ложкина Наталья Васильевна",
+      "birth_date": 841255200,
+      "sex": 0,
+      "organisation": "ООО \"Залесье\"",
+      "job_title": "Инженер-химик",
+      "fired": true
+    },
+    {
+      "id": "7",
+      "name": "Бондаренко Степак Васильевич",
+      "birth_date": 841255200,
+      "sex": 0,
+      "organisation": "ООО \"Залесье\"",
+      "job_title": "Инженер-химик",
+      "fired": true
+    },
+    {
+      "id": "8",
+      "name": "Золо Иван Васильевич",
+      "birth_date": 841255200,
+      "sex": 0,
+      "organisation": "ООО \"Залесье\"",
+      "job_title": "Инженер-химик",
+      "fired": true
+    },
+    {
+      "id": "9",
+      "name": "Плюшкин Иван Аркадьевич",
+      "birth_date": 975697200,
+      "sex": 0,
+      "organisation": "ООО \"Автозапчасти\"",
+      "job_title": "Механик",
+      "fired": true
+    },
+    {
+      "id": "10",
+      "name": "Александренков Жанна Георгиевна",
+      "birth_date": 932752800,
+      "sex": 1,
+      "organisation": "ИП Ларин А.С.",
+      "job_title": "Менеджер",
+      "fired": true
+    },
+    {
+      "id": "11",
+      "name": "Иванов Евгений Анатольевич",
+      "birth_date": 456861600,
+      "sex": 0,
+      "organisation": "ООО \"Тест\"",
+      "job_title": "Водитель",
+      "fired": true
+    },
+    {
+      "id": "12",
+      "name": "ауыаыуаыуаорисовна",
+      "birth_date": "1977-11-14",
+      "sex": "0",
+      "organisation": "ООО \"Медицина\"",
+      "job_title": "Врач",
+      "fired": true
+    },
+    {
+      "id": "13",
+      "name": "WDwadaw",
+      "birth_date": "1977-11-14",
+      "sex": 1,
+      "organisation": "ООО \"Медицина\"",
+      "job_title": "Врач",
+      "fired": true
+    },
+    {
+      "id": "14",
+      "name": "Петренко Артем Васильевич",
+      "birth_date": 841255200,
+      "sex": 0,
+      "organisation": "ООО \"Залесье\"",
+      "job_title": "Инженер-химик",
+      "fired": true
+    },
+    {
+      "id": "15",
+      "name": "Рыбов Евгений Анатольевич",
+      "birth_date": "1984-09-30",
+      "sex": 0,
+      "organisation": "ООО \"Партнёр\"",
+      "job_title": "Водитель",
+      "fired": true
+    },
+    {
+      "id": "16",
+      "name": "Птичкина Оксана Валерьевна",
+      "birth_date": 913921200,
+      "sex": 1,
+      "organisation": "ИП Яковлева Н.С.",
+      "job_title": "Бухгалтер",
+      "fired": true
+    },
+    {
+      "id": "17",
+      "name": "Васильев Сергей Викторович",
+      "birth_date": -149922000,
+      "sex": 0,
+      "organisation": "ООО \"Тест\"",
+      "job_title": "Водитель",
+      "fired": true
+    },
+    {
+      "id": "18",
+      "name": "аыаываыва",
+      "birth_date": "1985-11-02",
+      "sex": 0,
+      "organisation": "ООО \"Красный бор\"",
+      "job_title": "Водитель",
+      "fired": true
+    },
+    {
+      "id": "19",
+      "name": "Ватрушкин Иван Аркадьевич",
+      "birth_date": 975697200,
+      "sex": 0,
+      "organisation": "ООО \"Автозапчасти\"",
+      "job_title": "Механик",
+      "fired": true
+    },
+    {
+      "id": "20",
+      "name": "Пастухова Жанна Георгиевна",
+      "birth_date": 932752800,
+      "sex": 1,
+      "organisation": "ИП Ларин А.С.",
+      "job_title": "Менеджер",
+      "fired": true
+    },
+    {
+      "id": "21",
+      "name": "sadasdas",
+      "birth_date": "2024-05-17",
+      "sex": 0,
+      "organisation": "asdsad",
+      "job_title": "asdasd",
+      "fired": true
+    },
+    {
+      "id": "22",
+      "name": "768678678",
+      "birth_date": "2024-05-02",
+      "sex": 0,
+      "organisation": "678678",
+      "job_title": "678678",
+      "fired": false
+    },
+    {
+      "id": "23",
+      "name": "esfsefs",
+      "birth_date": "2024-05-04",
+      "sex": "1",
+      "organisation": "awdawd",
+      "job_title": "awdawd",
+      "fired": false
+    },
+    {
+      "id": "24",
+      "name": "asdasdas",
+      "birth_date": "2024-05-09",
+      "sex": 0,
+      "organisation": "asdasd",
+      "job_title": "asdasd",
+      "fired": true
+    },
+    {
+      "id": "25",
+      "name": "фцвфцвф",
+      "birth_date": "2024-05-03",
+      "sex": 0,
+      "organisation": "фцвфцв",
+      "job_title": "фцвфцв",
+      "fired": true
+    },
+    {
+      "id": "26",
+      "name": "фвфцвфц",
+      "birth_date": "2024-05-15",
+      "sex": 0,
+      "organisation": "фвфцвф",
+      "job_title": "фцвфцв",
+      "fired": true
+    },
+    {
+      "id": "27",
+      "name": "sdfsdf",
+      "birth_date": "2024-05-03",
+      "sex": 0,
+      "organisation": "sdfsdf",
+      "job_title": "sdfsdf",
+      "fired": true
+    },
+    {
+      "id": "28",
+      "name": "AAAAAAAAAA",
+      "birth_date": "2024-05-16",
+      "sex": 0,
+      "organisation": "AAAAAAAAAA",
+      "job_title": "AAAAAAAAAA",
+      "fired": true
+    },
+    {
+      "id": "29",
+      "name": "AAAAAAAAAA",
+      "birth_date": "2024-05-09",
+      "sex": 0,
+      "organisation": "AAAAAAAAAA",
+      "job_title": "AAAAAAAAAA",
+      "fired": true
+    },
+    {
+      "id": "30",
+      "name": "AAAAAAAAAA",
+      "birth_date": "2024-05-09",
+      "sex": 0,
+      "organisation": "AAAAAAAAAA",
+      "job_title": "AAAAAAAAAA",
+      "fired": true
+    },
+    {
+      "id": "31",
+      "name": "AAAAAAAAAA",
+      "birth_date": "2024-05-03",
+      "sex": 0,
+      "organisation": "AAAAAAAAAA",
+      "job_title": "AAAAAAAAAA",
+      "fired": true
+    },
+    {
+      "id": "32",
+      "name": "AAAAAAAAAA",
+      "birth_date": "2024-05-03",
+      "sex": 0,
+      "organisation": "AAAAAAAAAA",
+      "job_title": "AAAAAAAAAA",
+      "fired": true
+    },
+    {
+      "id": "33",
+      "name": "AAAAAAAAAA",
+      "birth_date": "2024-05-03",
+      "sex": 0,
+      "organisation": "AAAAAAAAAA",
+      "job_title": "AAAAAAAAAA",
+      "fired": true
+    },
+    {
+      "id": "34",
+      "name": "werwerwer",
+      "birth_date": "2024-05-01",
+      "sex": 0,
+      "organisation": "erwerwe",
+      "job_title": "werwer",
+      "fired": "true"
+    },
+    {
+      "id": "35",
+      "name": "wrewer",
+      "birth_date": "2024-05-02",
+      "sex": "1",
+      "organisation": "wrewer",
+      "job_title": "werwer",
+      "fired": true
+    },
+    {
+      "id": "36",
+      "name": "awdawd",
+      "birth_date": "2024-05-01",
+      "sex": 0,
+      "organisation": "awdawd",
+      "job_title": "aawdawd",
+      "fired": true
+    },
+    {
+      "id": "37",
+      "name": "awdawd",
+      "birth_date": "2024-05-09",
+      "sex": 0,
+      "organisation": "awdaw",
+      "job_title": "awdawd",
+      "fired": true
+    },
+    {
+      "id": "38",
+      "name": "awdadw",
+      "birth_date": "2024-05-02",
+      "sex": 0,
+      "organisation": "wadawd",
+      "job_title": "awdawda",
+      "fired": "true"
+    },
+    {
+      "id": "39",
+      "name": "awdaw",
+      "birth_date": "2024-05-03",
+      "sex": 0,
+      "organisation": "awdawd",
+      "job_title": "awdawd",
+      "fired": true
+    },
+    {
+      "id": "40",
+      "name": "awdawd",
+      "birth_date": "2024-05-02",
+      "sex": 0,
+      "organisation": "awdawd",
+      "job_title": "awdaw",
+      "fired": true
+    },
+    {
+      "id": "41",
+      "name": "awdawd",
+      "birth_date": "2024-05-03",
+      "sex": 0,
+      "organisation": "awdawd",
+      "job_title": "awd",
+      "fired": true
+    },
+    {
+      "id": "42",
+      "name": "ААААААААААА",
+      "birth_date": "2024-05-10",
+      "sex": 0,
+      "organisation": "ААААААААААА",
+      "job_title": "ААААААААААА",
+      "fired": true
+    },
+    {
+      "id": "43",
+      "name": "ББББББББББ",
+      "birth_date": "2024-05-10",
+      "sex": 0,
+      "organisation": "ББББББББББ",
+      "job_title": "ББББББББББ",
+      "fired": true
+    },
+    {
+      "id": "44",
+      "name": "awdawd",
+      "birth_date": "2024-05-03",
+      "sex": 0,
+      "organisation": "dawdaw",
+      "job_title": "awdawd",
+      "fired": true
+    },
+    {
+      "id": "45",
+      "name": "awdawd",
+      "birth_date": "2024-05-02",
+      "sex": 0,
+      "organisation": "awdawd",
+      "job_title": "adawdawd",
+      "fired": true
+    },
+    {
+      "id": "46",
+      "name": "dasdasd",
+      "birth_date": "2024-05-03",
+      "sex": 0,
+      "organisation": "asdasd",
+      "job_title": "asdasda",
+      "fired": true
+    },
+    {
+      "id": "47",
+      "name": "adsdas",
+      "birth_date": "2024-06-02",
+      "sex": 0,
+      "organisation": "awdawd",
+      "job_title": "awdawdaw",
+      "fired": true
+    },
+    {
+      "id": "48",
+      "name": "DDDD",
+      "birth_date": "2024-05-17",
+      "sex": 0,
+      "organisation": "DDDD",
+      "job_title": "DDDD",
+      "fired": true
+    }
+  ],
+  "medexams": [
+    {
+      "id": "1",
+      "employeeId": "5",
+      "date_exam": "1984-09-30",
+      "doctor_name": "Рик Санчес",
+      "temperature": 36.6,
+      "pressure_systolic": 120,
+      "pressure_diastolic": 80,
+      "status": true
+    },
+    {
+      "id": "2",
+      "employeeId": "5",
+      "date_exam": "1984-09-30",
+      "doctor_name": "Чувак",
+      "temperature": 38.6,
+      "pressure_systolic": 120,
+      "pressure_diastolic": 80,
+      "status": false
+    },
+    {
+      "id": "3",
+      "employeeId": "5",
+      "date_exam": "1984-09-30",
+      "doctor_name": "Еще один чувак",
+      "temperature": 36.6,
+      "pressure_systolic": 130,
+      "pressure_diastolic": 80,
+      "status": false
+    },
+    {
+      "id": "4",
+      "employeeId": "4",
+      "date_exam": "1984-09-30",
+      "doctor_name": "Рик Санчес",
+      "temperature": 36.6,
+      "pressure_systolic": 120,
+      "pressure_diastolic": 80,
+      "status": true
+    },
+    {
+      "id": "5",
+      "employeeId": "2",
+      "date_exam": "1984-09-30",
+      "doctor_name": "Рик Санчес",
+      "temperature": 36.6,
+      "pressure_systolic": 120,
+      "pressure_diastolic": 80,
+      "status": true
+    },
+    {
+      "id": "6",
+      "employeeId": "20",
+      "date_exam": "1984-09-30",
+      "doctor_name": "Рик Санчес",
+      "temperature": 36.6,
+      "pressure_systolic": 120,
+      "pressure_diastolic": 80,
+      "status": false
+    },
+    {
+      "id": "7",
+      "employeeId": "21",
+      "date_exam": "1984-09-30",
+      "doctor_name": "Рик Санчес",
+      "temperature": 36.6,
+      "pressure_systolic": 120,
+      "pressure_diastolic": 80,
+      "status": true
+    },
+    {
+      "id": "8",
+      "employeeId": "15",
+      "date_exam": "1984-09-30",
+      "doctor_name": "Рик Санчес",
+      "temperature": 36.6,
+      "pressure_systolic": 120,
+      "pressure_diastolic": 80,
+      "status": true
+    },
+    {
+      "id": "9",
+      "employeeId": "12",
+      "date_exam": "1984-09-30",
+      "doctor_name": "Рик Санчес",
+      "temperature": 36.6,
+      "pressure_systolic": 120,
+      "pressure_diastolic": 80,
+      "status": false
+    },
+    {
+      "id": "10",
+      "employeeId": "13",
+      "date_exam": "1984-09-30",
+      "doctor_name": "Рик Санчес",
+      "temperature": 36.6,
+      "pressure_systolic": 120,
+      "pressure_diastolic": 80,
+      "status": false
+    },
+    {
+      "id": "11",
+      "employeeId": "1",
+      "date_exam": "2024-05-10",
+      "doctor_name": "тут какой-та текст",
+      "temperature": 0,
+      "pressure_systolic": 0,
+      "pressure_diastolic": 0,
+      "status": false
+    },
+    {
+      "id": "12",
+      "employeeId": "17",
+      "date_exam": "2024-05-26",
+      "doctor_name": "fsdfsd",
+      "temperature": 121212,
+      "pressure_systolic": 0,
+      "pressure_diastolic": 0,
+      "status": false
+    }
+  ]
+}
